@@ -210,5 +210,52 @@ Så negationen vil blive:
  $$\exists x \in \mathbb{N} : \forall y \in \mathbb{N} : x \geq y$$
 Dette betyder: Der eksistere en $x$ i $\mathbb{N}$, således at for alle $y$ i $\mathbb{N}$, at $x$ er lig med eller større en $y$. 
   
+\section{Eksamen Januar 2015}
+De givne funktioner er:
+\[
+f(x) = x^2 + x + 1 \quad \text{og} \quad g(x) = 2x - 2.
+\]
+
+\subsection*{(a) Er \( f \) en bijektion?}
+For at afgøre, om \( f \) er en bijektion, skal vi undersøge, om den er både injektiv og surjektiv.
+
+\begin{itemize}
+    \item \textbf{Injektivitet:} \( f(x) = x^2 + x + 1 \) er en parabel, der åbner opad (fordi koefficienten foran \( x^2 \) er positiv). En parabel er ikke injektiv på \( \mathbb{R} \), da den ikke er én-til-én (den fejler den horisontale linjetest).
+    
+    \item \textbf{Surjektivitet:} For at være surjektiv skal alle \( y \in \mathbb{R} \) kunne opnås som \( f(x) \) for et \( x \in \mathbb{R} \). Da \( f(x) = x^2 + x + 1 \) har en minimumsværdi og ikke dækker hele \( \mathbb{R} \), er \( f \) heller ikke surjektiv.
+\end{itemize}
+
+Da \( f \) hverken er injektiv eller surjektiv, er den ikke en bijektion.
+
+\subsection*{(b) Har \( f \) en invers funktion?}
+En funktion har en invers, hvis og kun hvis den er bijektiv. Da \( f \) ikke er bijektiv, har den ikke en invers funktion.
+
+\subsection*{(c) Angiv \( f + g \)}
+Funktionen \( f + g \) er givet ved:
+\[
+(f + g)(x) = f(x) + g(x).
+\]
+Vi indsætter udtrykkene for \( f(x) \) og \( g(x) \):
+\[
+f(x) + g(x) = (x^2 + x + 1) + (2x - 2) = x^2 + 3x - 1.
+\]
+Så:
+\[
+(f + g)(x) = x^2 + 3x - 1.
+\]
+
+\subsection*{(d) Angiv \( g \circ f \)}
+Sammensætningen \( g \circ f \) betyder, at vi først anvender \( f \) og derefter \( g \):
+\[
+(g \circ f)(x) = g(f(x)).
+\]
+Vi indsætter \( f(x) = x^2 + x + 1 \) i \( g(x) \):
+\[
+g(f(x)) = g(x^2 + x + 1) = 2(x^2 + x + 1) - 2 = 2x^2 + 2x + 2 - 2 = 2x^2 + 2x.
+\]
+Så:
+\[
+(g \circ f)(x) = 2x^2 + 2x.
+\]
 
 \end{document}
